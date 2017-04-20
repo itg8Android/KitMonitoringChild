@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setAccesebility();
         startService(new Intent(this, SocialActivityTraceService.class));
         startService(new Intent(this, MyAccessibilityService.class));
+        Log.d("swappy","hello world");
 //        sendLoginInfoTOServer();
     }
 
