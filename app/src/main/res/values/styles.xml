@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--for login style -->
+    <style name="login_style">
+
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/text_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:shadowDx">05</item>
+        <item name="android:shadowDy">05</item>
+        <item name="android:shadowColor">@color/colorPrimary</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <!--- for edit text-->
+
+    <style name="edit_text">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/text_font</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:background">@drawable/edt_back</item>
+        <item name="android:singleLine">true</item>
+
+
+    </style>
+
+    <!-- for button -->
+
+    <style name="button_login">
+
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/text_font</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:shadowColor">@color/colorPrimary</item>
+        <item name="android:shadowDx">05</item>
+        <item name="android:shadowDy">05</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:elevation">05dp</item>
+
+
+    </style>
+
+    <style name="text_view_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/text_font</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="cardview_style" parent="CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:layout_marginRight">05dp</item>
+        <item name="android:layout_marginLeft">05dp</item>
+    </style>
+
+
+</resources>

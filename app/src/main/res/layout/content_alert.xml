@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_alert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="itg8.com.kitmonitoringchild.alertActivity.AlertActivity"
+    tools:showIn="@layout/activity_alert">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FramLayout">
+        <RelativeLayout
+            android:id="@+id/hideImageRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:src="@drawable/ic_warning"
+                android:id="@+id/img_alert"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+               android:layout_centerInParent="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/img_alert"
+                android:text="@string/alertmessage"
+                style="@style/text_view_style"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/showLoginRelative"
+            android:visibility="visible">
+            <EditText
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_text"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Mobile number"/>
+
+            <EditText
+                android:singleLine="false"
+                android:layout_marginTop="30dp"
+                android:id="@+id/edt_smsMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_text"
+                android:layout_below="@+id/edt_mobile"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Message"/>
+            <Button
+                android:id="@+id/btn_sendSms"
+                android:layout_below="@+id/edt_smsMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="@style/button_login"
+                android:text="@string/sendsms"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>
